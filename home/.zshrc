@@ -35,11 +35,10 @@ source $ZSH/oh-my-zsh.sh
 alias glr="grep -lr"
 alias bu="bundle update"
 alias bi="bundle install"
-alias be="bundle exec"
+alias be="noglob bundle exec"
 alias gp="git pull --rebase"
 alias gc="git commit"
 alias ga="git add"
-alias gpo="git push origin"
 alias cmoz="cd ~/code/cmoz"
 alias silo="cd ~/code/silo"
 alias make_tags="/usr/local/bin/ctags -R"
@@ -49,4 +48,7 @@ alias make_tags="/usr/local/bin/ctags -R"
 ulimit -n 4096
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/davidann/.rvm/bin
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
+#Adding required environbment variables to run the aws ec2 cli tools
+source ~/.ec2-cli-profile
+export PATH=/Users/davidann/.rvm/gems/ruby-1.9.2-p290@silo/bin:/Users/davidann/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/davidann/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/davidann/.rvm/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/davidann/.ec2/ec2-api-tools-1.6.7.3/bin:/Users/davidann/code/silo/dev_tools/ec2/bin/ec2-api-tools-1.6.7.3/bin:/Users/davidann/code/silo/dev_tools/ec2/bin/ec2-api-tools-1.6.7.3:/usr/local/ec2-api-tools-1.6.7.4
+ssh-add ~/.ssh/id_rsa
