@@ -42,7 +42,7 @@ imap jj <Esc>
 
 imap {{ #{}
 
-map <leader>c :!/usr/local/bin/ctags -R
+map <leader>c :!/usr/local/bin/ctags -R --exclude=node_modules
 
 nmap mm <C-w>
 

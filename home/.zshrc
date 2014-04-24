@@ -52,3 +52,8 @@ export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X1
 source ~/.ec2-cli-profile
 export PATH=/Users/davidann/.rvm/gems/ruby-1.9.2-p290@silo/bin:/Users/davidann/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/davidann/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/davidann/.rvm/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/davidann/.ec2/ec2-api-tools-1.6.7.3/bin:/Users/davidann/code/silo/dev_tools/ec2/bin/ec2-api-tools-1.6.7.3/bin:/Users/davidann/code/silo/dev_tools/ec2/bin/ec2-api-tools-1.6.7.3:/usr/local/ec2-api-tools-1.6.7.4
 ssh-add ~/.ssh/id_rsa
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+source ~/.aliases
+export EDITOR=vim
