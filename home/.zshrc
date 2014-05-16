@@ -57,3 +57,4 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 source ~/.aliases
 export EDITOR=vim
+source ~/.bash_functions
