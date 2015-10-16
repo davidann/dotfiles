@@ -40,6 +40,9 @@ map <D-s> :w<CR>
 " map escape key
 imap jj <Esc>
 
+" Map quit
+map ii :q<CR>
+
 imap {{ #{}
 
 map <leader>c :!/usr/local/bin/ctags -R --exclude=node_modules
