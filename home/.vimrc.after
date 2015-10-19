@@ -41,7 +41,7 @@ map <D-s> :w<CR>
 imap jj <Esc>
 
 " Map quit
-map ii :q<CR>
+map ii :q!<CR>
 
 imap {{ #{}
 
