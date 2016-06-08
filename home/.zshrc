@@ -59,3 +59,7 @@ source ~/.aliases
 export EDITOR=vim
 source ~/.bash_functions
 eval "$(rbenv init -)"
+export NVM_DIR="$HOME/.nvm"
+  . "$(brew --prefix nvm)/nvm.sh"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
