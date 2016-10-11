@@ -42,6 +42,8 @@ alias ga="git add"
 alias cmoz="cd ~/code/cmoz"
 alias silo="cd ~/code/silo"
 alias make_tags="/usr/local/bin/ctags -R"
+alias ssh-roger="cd ~/code/roger-cli; vagrant ssh"
+alias go-feedstore="cd ~/code/mozcookbook_feedstore/feedstore"
 # Customize to your needs...
 
 #riak needs, at least, 4096 file descriptors
@@ -63,3 +65,14 @@ export NVM_DIR="$HOME/.nvm"
   . "$(brew --prefix nvm)/nvm.sh"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+#jenv support
+if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/davidann/.sdkman"
+[[ -s "/Users/davidann/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/davidann/.sdkman/bin/sdkman-init.sh"
+export PATH=/Users/davidann/activator-dist-1.3.10/bin:$PATH
+
+export SCALA_PATH="/Users/davidann/scala-2.11.8"
+export PATH=$PATH:$SCALA_PATH/bin
