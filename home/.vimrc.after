@@ -114,3 +114,6 @@ set winwidth=110
 
 set textwidth=100
 set colorcolumn=+1
+
+" format javadoc comments according to http://docs.scala-lang.org/style/scaladoc.html
+let g:scala_scaladoc_indent = 1
