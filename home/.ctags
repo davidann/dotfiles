@@ -25,3 +25,10 @@
 --regex-scala=/^[ \t]*((abstract|final|sealed|implicit|lazy|private[^ ]*|protected)[ \t]*)*val[ \t]+([a-zA-Z0-9_]+)/\3/l,constants/
 --regex-scala=/^[ \t]*((abstract|final|sealed|implicit|lazy|private[^ ]*|protected)[ \t]*)*var[ \t]+([a-zA-Z0-9_]+)/\3/l,variables/
 --regex-scala=/^[ \t]*package[ \t]+([a-zA-Z0-9_.]+)/\1/p,packages/
+
+--langdef=CoffeeScript
+--langmap=CoffeeScript:.coffee
+--regex-CoffeeScript=/(^|=[ \t])*class ([A-Za-z.]+)( extends [A-Za-z.]+)?$/\2/c,class/
+--regex-CoffeeScript=/^[ \t]*@?([A-Za-z.]+):.*[-=]>.*$/\1/f,function/ 
+--regex-CoffeeScript=/^[ \t]*([A-Za-z.]+)[ \t]+=.*[-=]>.*$/\1/f,function/
+--regex-CoffeeScript=/^[ \t]*([A-Za-z.]+)[ \t]+=[^-=>\n]*$/\1/v,variable/
